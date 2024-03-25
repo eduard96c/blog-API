@@ -1,0 +1,30 @@
+{
+  "name": "node-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clear": "rimraf node_modules",
+    "doctoc": "doctoc README.md",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "data": "git checkout HEAD^ data/teams.json"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
