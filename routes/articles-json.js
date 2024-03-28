@@ -18,26 +18,22 @@ router.get("/", function (req, res, next) {
  *
  */
 router.post("/create", function (req, res, next) {
-  const author = req.body.author;
+  // const author = req.body.author;
   const date = req.body.date;
-  const preview_description = req.body.preview_description;
   const title = req.body.title;
   const image = req.body.image;
   const content = req.body.content;
-  const comments = req.body.comments;
 
   const articles = getArticles();
   const id = Math.random().toString(36).substring(7) + new Date().getTime();
 
   articles.push({
     id,
-    author,
+    // author,
     date,
-    preview_description,
     title,
     image,
-    content,
-    comments
+    content
   });
 
   setArticles(articles);
@@ -64,25 +60,21 @@ router.delete("/delete", function (req, res, next) {
  */
 router.put("/update", function (req, res, next) {
   const id = req.body.id;
-  const author = req.body.author;
+  // const author = req.body.author;
   const date = req.body.date;
-  const preview_description = req.body.preview_description;
   const title = req.body.title;
   const image = req.body.image;
   const content = req.body.content;
-  const comments = [];
 
   const articles = getArticles();
 
   const article = articles.find(article => article.id == id);
   if (article) {
-    article.author = author;
+    // article.author = author;
     article.date = date;
-    article.preview_description = preview_description;
     article.title = title;
     article.image = image;
     article.content = content;
-    article.comments = comments;
   }
 
   setArticles(articles);
