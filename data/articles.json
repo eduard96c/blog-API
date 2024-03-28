@@ -16,6 +16,7 @@
     "image": "test3"
   },
   {
+<<<<<<< HEAD
     "id": "wwqdor1711651614485",
     "category": "Marketing & SEO",
     "title": "sadasd",
@@ -42,5 +43,11 @@
     "title": "ddd",
     "image": "ssss",
     "content": "zxczxczxczxc"
+=======
+    "id": "2x6el1711650352551",
+    "category": "IT & Web Design",
+    "title": "s",
+    "image": "s"
+>>>>>>> 9ca4b0be8fb40e6fe64ebcd1c516594c92676074
   }
 ]
