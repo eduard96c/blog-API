@@ -23,6 +23,7 @@ router.post("/create", function (req, res, next) {
   const title = req.body.title;
   const image = req.body.image;
   const content = req.body.content;
+  const category = req.body.category;
 
   const articles = getArticles();
   const id = Math.random().toString(36).substring(7) + new Date().getTime();
@@ -30,6 +31,7 @@ router.post("/create", function (req, res, next) {
   articles.push({
     id,
     // author,
+    category,
     date,
     title,
     image,
