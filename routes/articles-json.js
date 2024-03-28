@@ -51,7 +51,7 @@ router.delete("/delete", function (req, res, next) {
   const id = req.body.id;
 
   const articles = getArticles().filter(article => article.id != id);
-
+  console.log(articles);
   setArticles(articles);
 
   res.json({ success: true });
