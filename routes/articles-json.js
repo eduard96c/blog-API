@@ -19,7 +19,7 @@ router.get("/", function (req, res, next) {
  */
 router.post("/create", function (req, res, next) {
   // const author = req.body.author;
-  const date = req.body.date;
+  const date = Date.now();
   const title = req.body.title;
   const image = req.body.image;
   const content = req.body.content;
