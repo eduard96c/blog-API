@@ -5,31 +5,6 @@
     "image": "test"
   },
   {
-    "id": "n0qxv81711649963178",
-    "title": "tst1",
-    "image": "test1"
-  },
-  {
-    "id": "a8mb3d1711650064832",
-    "category": "Marketing & SEO",
-    "title": "test3",
-    "image": "test3"
-  },
-  {
-<<<<<<< HEAD
-    "id": "wwqdor1711651614485",
-    "category": "Marketing & SEO",
-    "title": "sadasd",
-    "image": "asdads"
-  },
-  {
-    "id": "r2fd3o1711651729469",
-    "category": "Marketing & SEO",
-    "title": "www",
-    "image": "www",
-    "content": "wwwwwww"
-  },
-  {
     "id": "33c0j1711651806712",
     "category": "Marketing & SEO",
     "title": "asdasdasd",
@@ -43,11 +18,21 @@
     "title": "ddd",
     "image": "ssss",
     "content": "zxczxczxczxc"
-=======
-    "id": "2x6el1711650352551",
-    "category": "IT & Web Design",
-    "title": "s",
-    "image": "s"
->>>>>>> 9ca4b0be8fb40e6fe64ebcd1c516594c92676074
+  },
+  {
+    "id": "qn94fb1711653219905",
+    "category": "Marketing & SEO",
+    "date": 1711653219904,
+    "title": "5 Sfaturi pentru Crearea unui Logo Potrivit pentru                         Brandul Tău Online",
+    "image": "logos_img_ex.png",
+    "content": "În era digitală în care prima impresie contează mai\n                          mult ca niciodată, un logo puternic este un element\n                          crucial în identitatea vizuală a brandului tău online.\n                          Iată câteva sfaturi cheie pentru a crea un logo care\n                          să se potrivească perfect cu identitatea și scopul tău\n                          online: Simplu și Memorabil: Alege un design simplu și\n                          ușor de recunoscut. Logo-ul tău ar trebui să fie\n                          memorabil și să poată fi reținut ușor de către\n                          publicul tău țintă. Evită complexitatea excesivă și\n                          optează pentru un design care să comunice clar mesajul\n                          și valorile brandului tău. Reprezintă Esența Brandului\n                          Tău: Logo-ul ar trebui să reflecte identitatea și\n                          valorile brandului tău online. Gândește-te la ce vrei\n                          să comunici și la publicul tău țintă."
+  },
+  {
+    "id": "m6scdn1711653570741",
+    "category": "Marketing & SEO",
+    "date": 1711653570741,
+    "title": "asdasd",
+    "image": "asdasdasd",
+    "content": "asdasasdasd"
   }
 ]

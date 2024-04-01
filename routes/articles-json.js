@@ -10,13 +10,20 @@ const DATA_PATH = "data/articles.json";
 
 router.get("/", function (req, res, next) {
   console.log("reading file %o", DATA_PATH);
-  const teams = getArticles();
-  res.json(teams);
+  const limit = req.query.limit;
+  const offset = req.query.offset;
+
+  const articles = getArticles();
+
+  res.json(articles.slice(offset, parseInt(offset) + parseInt(limit)));
+  console.log(offset);
+  console.log(offset + limit);
 });
 
 /**
  *
  */
+
 router.post("/create", function (req, res, next) {
   // const author = req.body.author;
   const date = Date.now();
@@ -49,6 +56,7 @@ router.post("/create", function (req, res, next) {
  */
 router.delete("/delete", function (req, res, next) {
   const id = req.body.id;
+  console.log(id);
 
   const articles = getArticles().filter(article => article.id != id);
 
@@ -62,8 +70,9 @@ router.delete("/delete", function (req, res, next) {
  */
 router.put("/update", function (req, res, next) {
   const id = req.body.id;
+  const category = req.body.id;
   // const author = req.body.author;
-  const date = req.body.date;
+  // const date = req.body.date;
   const title = req.body.title;
   const image = req.body.image;
   const content = req.body.content;
@@ -74,6 +83,7 @@ router.put("/update", function (req, res, next) {
   if (article) {
     // article.author = author;
     article.date = date;
+    article.category = categry;
     article.title = title;
     article.image = image;
     article.content = content;
