@@ -59,7 +59,7 @@ router.delete("/delete", function (req, res, next) {
   console.log(id);
 
   const articles = getArticles().filter(article => article.id != id);
-
+  console.log(articles);
   setArticles(articles);
 
   res.json({ success: true });
