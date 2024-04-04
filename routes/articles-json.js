@@ -12,12 +12,16 @@ router.get("/", function (req, res, next) {
   console.log("reading file %o", DATA_PATH);
   const limit = req.query.limit;
   const offset = req.query.offset;
+  const category = req.query.category;
+  console.log(category);
 
   const articles = getArticles();
-
-  res.json(articles.slice(offset, parseInt(offset) + parseInt(limit)));
-  console.log(offset);
-  console.log(offset + limit);
+  if (category) {
+    var filtred_articles = articles.filter(article => article.category == category);
+    res.json(filtred_articles.slice(offset, parseInt(offset) + parseInt(limit)));
+  } else {
+    res.json(articles.slice(offset, parseInt(offset) + parseInt(limit)));
+  }
 });
 
 /**
@@ -70,7 +74,7 @@ router.delete("/delete", function (req, res, next) {
  */
 router.put("/update", function (req, res, next) {
   const id = req.body.id;
-  const category = req.body.id;
+  const category = req.body.category;
   // const author = req.body.author;
   const date = Date.now();
   const title = req.body.title;

@@ -2,55 +2,63 @@
   {
     "id": "ah7pue1711649798226",
     "title": "test",
-    "image": "test"
+    "image": "test",
+    "date": 1712250218418,
+    "category": "it-web_design",
+    "content": ""
   },
   {
-<<<<<<< HEAD
-=======
     "id": "n0qxv81711649963178",
     "title": "tst1",
-    "image": "test1"
+    "image": "test1",
+    "date": 1712250225383,
+    "category": "it-web_design",
+    "content": ""
   },
   {
     "id": "a8mb3d1711650064832",
-    "category": "Marketing & SEO",
+    "category": "ux-graphic_desing",
     "title": "test3",
-    "image": "test3"
+    "image": "test3",
+    "date": 1712250233560,
+    "content": ""
   },
   {
     "id": "wwqdor1711651614485",
-    "category": "Marketing & SEO",
+    "category": "ux-graphic_design",
     "title": "sadasd",
-    "image": "asdads"
+    "image": "asdads",
+    "date": 1712250598515,
+    "content": ""
   },
   {
     "id": "r2fd3o1711651729469",
-    "category": "Marketing & SEO",
+    "category": "marketing-seo",
     "title": "www",
     "image": "www",
-    "content": "wwwwwww"
+    "content": "wwwwwww",
+    "date": 1712250361963
   },
   {
->>>>>>> 137c6f9e055fd5bdfe43b6e413063bcc384a7c4b
     "id": "33c0j1711651806712",
-    "category": "Marketing & SEO",
+    "category": "marketing-seo",
     "title": "asdasdasd",
     "image": "asdasdas",
-    "content": "dasdasdasdasd"
+    "content": "dasdasdasdasd",
+    "date": 1712250374347
   },
   {
     "id": "mn8k4l1711651840700",
-    "category": "Marketing & SEO",
-    "date": 1711651840699,
+    "category": "mn8k4l1711651840700",
+    "date": 1712249767531,
     "title": "ddd",
     "image": "ssss",
     "content": "zxczxczxczxc"
-<<<<<<< HEAD
   },
   {
     "id": "qn94fb1711653219905",
-    "category": "Marketing & SEO",
-    "date": 1711653219904,
+    "category": "qn94fb1711653219905",
+    "date": 1712249775735,
     "title": "5 Sfaturi pentru Crearea unui Logo Potrivit pentru                         Brandul Tău Online",
     "image": "logos_img_ex.png",
     "content": "În era digitală în care prima impresie contează mai\n                          mult ca niciodată, un logo puternic este un element\n                          crucial în identitatea vizuală a brandului tău online.\n                          Iată câteva sfaturi cheie pentru a crea un logo care\n                          să se potrivească perfect cu identitatea și scopul tău\n                          online: Simplu și Memorabil: Alege un design simplu și\n                          ușor de recunoscut. Logo-ul tău ar trebui să fie\n                          memorabil și să poată fi reținut ușor de către\n                          publicul tău țintă. Evită complexitatea excesivă și\n                          optează pentru un design care să comunice clar mesajul\n                          și valorile brandului tău. Reprezintă Esența Brandului\n                          Tău: Logo-ul ar trebui să reflecte identitatea și\n                          valorile brandului tău online. Gândește-te la ce vrei\n                          să comunici și la publicul tău țintă."
@@ -62,7 +70,5 @@
     "title": "asdasd",
     "image": "asdasdasd",
     "content": "asdasasdasd"
-=======
->>>>>>> 137c6f9e055fd5bdfe43b6e413063bcc384a7c4b
   }
 ]
