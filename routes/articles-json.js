@@ -72,7 +72,7 @@ router.put("/update", function (req, res, next) {
   const id = req.body.id;
   const category = req.body.id;
   // const author = req.body.author;
-  // const date = req.body.date;
+  const date = Date.now();
   const title = req.body.title;
   const image = req.body.image;
   const content = req.body.content;
@@ -83,7 +83,7 @@ router.put("/update", function (req, res, next) {
   if (article) {
     // article.author = author;
     article.date = date;
-    article.category = categry;
+    article.category = category;
     article.title = title;
     article.image = image;
     article.content = content;
