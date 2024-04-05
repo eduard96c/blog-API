@@ -13,15 +13,41 @@ router.get("/", function (req, res, next) {
   const limit = req.query.limit;
   const offset = req.query.offset;
   const category = req.query.category;
-  console.log(category);
+
+  let is_last = false;
+  let result_articles = [];
 
   const articles = getArticles();
+  //selectam articole dupa o categorie
   if (category) {
     var filtred_articles = articles.filter(article => article.category == category);
-    res.json(filtred_articles.slice(offset, parseInt(offset) + parseInt(limit)));
+    result_articles = filtred_articles.slice(offset, parseInt(offset) + parseInt(limit));
+    if (parseInt(offset) === 0) {
+      result_articles.push(filtred_articles[filtred_articles.length - 1]);
+    }
+
+    //verificam daca am ajuns la capat
+    if (parseInt(offset) + parseInt(limit) >= filtred_articles.length - 1) {
+      is_last = true;
+    }
   } else {
-    res.json(articles.slice(offset, parseInt(offset) + parseInt(limit)));
+    //selectam toate articolele
+    result_articles = articles.slice(offset, parseInt(offset) + parseInt(limit));
+    //daca offset == 0 aducem si ultimul articol
+    if (parseInt(offset) === 0) {
+      result_articles.push(articles[articles.length - 1]);
+      console.log(articles[articles.length - 1]);
+    }
+
+    //verificam daca am ajuns la capat
+    if (parseInt(offset) + parseInt(limit) >= articles.length - 1) {
+      is_last = true;
+    }
+    console.log(offset);
+    console.log(articles.length);
   }
+
+  res.json({ articles: result_articles, is_last: is_last });
 });
 
 /**
