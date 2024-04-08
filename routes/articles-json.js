@@ -15,36 +15,27 @@ router.get("/", function (req, res, next) {
   const category = req.query.category;
 
   let is_last = false;
+  let articles = [];
   let result_articles = [];
 
-  const articles = getArticles();
-  //selectam articole dupa o categorie
   if (category) {
-    var filtred_articles = articles.filter(article => article.category == category);
-    result_articles = filtred_articles.slice(offset, parseInt(offset) + parseInt(limit));
-    if (parseInt(offset) === 0) {
-      result_articles.push(filtred_articles[filtred_articles.length - 1]);
-    }
-
-    //verificam daca am ajuns la capat
-    if (parseInt(offset) + parseInt(limit) >= filtred_articles.length - 1) {
-      is_last = true;
-    }
+    articles = getArticlesByCategory(category);
   } else {
-    //selectam toate articolele
+    articles = getArticles();
+  }
+
+  if (limit) {
     result_articles = articles.slice(offset, parseInt(offset) + parseInt(limit));
     //daca offset == 0 aducem si ultimul articol
     if (parseInt(offset) === 0) {
       result_articles.push(articles[articles.length - 1]);
-      console.log(articles[articles.length - 1]);
     }
-
-    //verificam daca am ajuns la capat
+    //verificam daca am ajuns la ultimul articol
     if (parseInt(offset) + parseInt(limit) >= articles.length - 1) {
       is_last = true;
     }
-    console.log(offset);
-    console.log(articles.length);
+  } else {
+    result_articles = articles;
   }
 
   res.json({ articles: result_articles, is_last: is_last });
@@ -127,6 +118,12 @@ router.put("/update", function (req, res, next) {
 function getArticles() {
   const content = fs.readFileSync(DATA_PATH);
   return JSON.parse(content);
+}
+
+function getArticlesByCategory(category) {
+  const content = fs.readFileSync(DATA_PATH);
+  const articles = JSON.parse(content);
+  return articles.filter(article => article.category == category);
 }
 
 function setArticles(articles) {

@@ -8,20 +8,12 @@
     "content": ""
   },
   {
-    "id": "n0qxv81711649963178",
-    "title": "tst1",
-    "image": "test1",
-    "date": 1712250225383,
-    "category": "it-web_design",
-    "content": ""
-  },
-  {
     "id": "a8mb3d1711650064832",
-    "category": "ux-graphic_desing",
+    "category": "ux-graphic_design",
     "title": "test3",
     "image": "test3",
-    "date": 1712250233560,
-    "content": ""
+    "date": 1712577029752,
+    "content": "h3: we are testing\ntesting if the update works"
   },
   {
     "id": "wwqdor1711651614485",
@@ -48,16 +40,8 @@
     "date": 1712250374347
   },
   {
-    "id": "mn8k4l1711651840700",
-    "category": "mn8k4l1711651840700",
-    "date": 1712249767531,
-    "title": "ddd",
-    "image": "ssss",
-    "content": "zxczxczxczxc"
-  },
-  {
     "id": "qn94fb1711653219905",
-    "category": "qn94fb1711653219905",
+    "category": "marketing-seo",
     "date": 1712249775735,
     "title": "5 Sfaturi pentru Crearea unui Logo Potrivit pentru                         Brandul Tău Online",
     "image": "logos_img_ex.png",
@@ -65,10 +49,18 @@
   },
   {
     "id": "m6scdn1711653570741",
-    "category": "Marketing & SEO",
+    "category": "marketing-seo",
     "date": 1711653570741,
     "title": "asdasd",
     "image": "asdasdasd",
     "content": "asdasasdasd"
+  },
+  {
+    "id": "52jsd1712577057774",
+    "category": "ux-graphic_design",
+    "date": 1712577057774,
+    "title": "Testing if creation works again",
+    "image": "",
+    "content": "h3: testing if creation works\nwe are working on creating "
   }
 ]
